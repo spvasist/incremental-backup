@@ -53,7 +53,7 @@
             this.textBoxNewDataPath.Name = "textBoxNewDataPath";
             this.textBoxNewDataPath.ReadOnly = true;
             this.textBoxNewDataPath.Size = new System.Drawing.Size(623, 20);
-            this.textBoxNewDataPath.TabIndex = 0;
+            this.textBoxNewDataPath.TabIndex = 2;
             // 
             // buttonBackupPath
             // 
@@ -70,7 +70,7 @@
             this.buttonNewDataPath.Location = new System.Drawing.Point(755, 83);
             this.buttonNewDataPath.Name = "buttonNewDataPath";
             this.buttonNewDataPath.Size = new System.Drawing.Size(75, 23);
-            this.buttonNewDataPath.TabIndex = 1;
+            this.buttonNewDataPath.TabIndex = 3;
             this.buttonNewDataPath.Text = "Browse...";
             this.buttonNewDataPath.UseVisualStyleBackColor = true;
             this.buttonNewDataPath.Click += new System.EventHandler(this.buttonNewDataPath_Click);
@@ -82,7 +82,7 @@
             this.buttonBackup.Location = new System.Drawing.Point(126, 136);
             this.buttonBackup.Name = "buttonBackup";
             this.buttonBackup.Size = new System.Drawing.Size(704, 102);
-            this.buttonBackup.TabIndex = 1;
+            this.buttonBackup.TabIndex = 4;
             this.buttonBackup.UseVisualStyleBackColor = true;
             this.buttonBackup.Click += new System.EventHandler(this.buttonBackup_Click);
             // 
@@ -108,8 +108,9 @@
             // 
             this.folderBrowserDialog.ShowNewFolderButton = false;
             // 
-            // Form1
+            // IncrementalBackup
             // 
+            this.AcceptButton = this.buttonBackup;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 261);
@@ -122,7 +123,7 @@
             this.Controls.Add(this.textBoxBackupPath);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "IncrementalBackup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Incremental Backup";
             this.Load += new System.EventHandler(this.Form1_Load);
